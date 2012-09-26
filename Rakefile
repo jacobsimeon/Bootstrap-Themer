@@ -23,3 +23,20 @@ task :build do
   puts "Done"
   system "ls build"
 end
+
+task :initialize do
+  #Install less and uglifyjs (for compiling on the fly and building final output) 
+  system "npm install -g less uglify-js" 
+
+  #Install the necessary rubygems
+  system "bundle install"
+
+  #Initialize bootstrap as a git submodule"
+  system "git submodule init"
+  system "git submodule update"
+end
+
+task :start do
+  system "ruby app.rb"
+end
+
