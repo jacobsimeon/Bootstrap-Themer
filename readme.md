@@ -1,14 +1,11 @@
 ##Bootstrap Themer (working title)
 
-A simple sinatra app comprised of a sample html document which compiles 
-twitter bootstrap on the fly.
+A simple sinatra app which compiles twitter bootstrap on the fly.
 This allows you to make changes to your less and javascript 
-files and see the changes instantly in your browser.
+files and see them instantly in your browser.
 
-The sample html document contains all the most common bootstrap elements 
-so you can how your changes effect the whole bootstrap framework.  
-Add html files to `/public` with your custom markup for even more detail 
-  (new files will be available at http://localhost:4567/my_new_file.html).
+The application serves a sample html document which contains all the most common bootstrap elements 
+so you can see how your changes effect the whole bootstrap framework.
 
 ##Installation:
 Pre-requisites:
@@ -17,13 +14,13 @@ Pre-requisites:
  - ruby
  - bundler
 
-Clone the repository
+####Clone the repository
 
-`git clone git@github.com:jacobsimeon/Bootstrap-Themer.git themer`
+    git clone git@github.com:jacobsimeon/Bootstrap-Themer.git
 
-`cd themer`
+####Install Dependencies
+    rake initialize
 
-Run `rake initialize` to get everything set up.
 This will install all the npm packages and ruby gems that you'll need.  
 It also initializes bootstrap as a submodule.
 
