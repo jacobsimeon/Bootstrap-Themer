@@ -18,9 +18,10 @@ Pre-requisites:
  - bundler
 
 Clone the repository
-`git clone git@github.com:jacobsimeon/Bootstrap-Themer.git themer`
-`cd themer`
 
+`git clone git@github.com:jacobsimeon/Bootstrap-Themer.git themer`
+
+`cd themer`
 
 Run `rake initialize` to get everything set up.
 This will install all the npm packages and ruby gems that you'll need.  
@@ -29,7 +30,7 @@ It also initializes bootstrap as a submodule.
 ##Usage:
   1. Start the sinatra app with `rake start`
   2. Visit http://localhost:4567 in your browser
-  3. Edit files in `bootstrap/less` and `bootstrap\js`
+  3. Edit files in `bootstrap/less` and `bootstrap/js`
   4. Reload the page in your browser to see your changes
   5. When you're happy with your changes, run `rake buid`
     - this will compile bootstrap.css, bootstrap-responsive.css and bootstrap.js and place them in `./build`
